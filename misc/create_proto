@@ -1,0 +1,5 @@
+#! /bin/sh
+
+echo "Work in progress..."
+find /usr/include -name '*.h' -exec cat {} \; | grep "^extern " > prot_syscall
+echo "Done !"
